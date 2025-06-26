@@ -9,61 +9,61 @@ const Hero = () => {
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d6d3d1' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
       }}></div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
-            <h1 className="text-5xl lg:text-6xl font-bold text-stone-800 mb-6 leading-tight">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="animate-fade-in text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-stone-800 mb-4 sm:mb-6 leading-tight">
               Grow Your Social Media
               <span className="text-amber-600"> Presence</span>
             </h1>
-            <p className="text-xl text-stone-600 mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl text-stone-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Transform your social media strategy with our proven methods. 
               We help businesses and creators achieve authentic growth, 
               engagement, and meaningful connections with their audience.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg">
+            <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8 justify-center lg:justify-start">
+              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg">
                 Get Started Today
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-stone-300 text-stone-700 hover:bg-stone-100 px-8 py-3 text-lg">
+              <Button variant="outline" size="lg" className="border-stone-300 text-stone-700 hover:bg-stone-100 px-6 sm:px-8 py-3 text-base sm:text-lg">
                 View Our Work
               </Button>
             </div>
-            <div className="flex items-center gap-6 text-stone-600">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-stone-600 text-sm sm:text-base justify-center lg:justify-start">
               <div className="flex items-center gap-2">
-                <Instagram className="h-5 w-5 text-amber-600" />
+                <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-amber-600" />
                 <span>Instagram Growth</span>
               </div>
               <div className="flex items-center gap-2">
-                <Twitter className="h-5 w-5 text-amber-600" />
+                <Twitter className="h-4 w-4 sm:h-5 sm:w-5 text-amber-600" />
                 <span>Twitter Marketing</span>
               </div>
               <div className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-amber-600" />
+                <TrendingUp className="h-4 w-4 sm:h-5 sm:w-5 text-amber-600" />
                 <span>Analytics</span>
               </div>
             </div>
           </div>
           
-          <div className="relative animate-scale-in">
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-stone-200">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-4 bg-amber-50 rounded-xl">
-                  <div className="text-3xl font-bold text-amber-600 mb-2">500K+</div>
-                  <div className="text-stone-600">Followers Gained</div>
+          <div className="relative animate-scale-in mt-8 lg:mt-0">
+            <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-stone-200">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
+                <div className="text-center p-3 sm:p-4 bg-amber-50 rounded-xl">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-amber-600 mb-1 sm:mb-2">500K+</div>
+                  <div className="text-xs sm:text-sm text-stone-600">Followers Gained</div>
                 </div>
-                <div className="text-center p-4 bg-stone-100 rounded-xl">
-                  <div className="text-3xl font-bold text-stone-700 mb-2">98%</div>
-                  <div className="text-stone-600">Client Satisfaction</div>
+                <div className="text-center p-3 sm:p-4 bg-stone-100 rounded-xl">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-stone-700 mb-1 sm:mb-2">98%</div>
+                  <div className="text-xs sm:text-sm text-stone-600">Client Satisfaction</div>
                 </div>
-                <div className="text-center p-4 bg-stone-100 rounded-xl">
-                  <div className="text-3xl font-bold text-stone-700 mb-2">150+</div>
-                  <div className="text-stone-600">Happy Clients</div>
+                <div className="text-center p-3 sm:p-4 bg-stone-100 rounded-xl">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-stone-700 mb-1 sm:mb-2">150+</div>
+                  <div className="text-xs sm:text-sm text-stone-600">Happy Clients</div>
                 </div>
-                <div className="text-center p-4 bg-amber-50 rounded-xl">
-                  <div className="text-3xl font-bold text-amber-600 mb-2">300%</div>
-                  <div className="text-stone-600">Avg. Growth</div>
+                <div className="text-center p-3 sm:p-4 bg-amber-50 rounded-xl">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-amber-600 mb-1 sm:mb-2">300%</div>
+                  <div className="text-xs sm:text-sm text-stone-600">Avg. Growth</div>
                 </div>
               </div>
             </div>
