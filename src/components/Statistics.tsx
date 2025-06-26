@@ -167,11 +167,9 @@ const Statistics = () => {
                       cx="50%"
                       cy="50%"
                       outerRadius={60}
-                      className="sm:outerRadius-80"
                       dataKey="value"
                       label={({ platform, value }) => `${platform}: ${value}%`}
-                      fontSize={10}
-                      className="sm:text-sm"
+                      className="text-xs sm:text-sm"
                     >
                       {engagementData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={entry.color} />
