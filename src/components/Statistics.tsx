@@ -15,7 +15,7 @@ const Statistics = () => {
   const engagementData = [
     { platform: 'Instagram', value: 85, color: '#E91E63' },
     { platform: 'Twitter', value: 70, color: '#8B5CF6' },
-    { platform: 'TikTok', value: 92, color: '#F97316' },
+    { platform: 'TikTok', value: 92, color: '#F43F5E' },
     { platform: 'LinkedIn', value: 68, color: '#EC4899' },
   ];
 
@@ -27,7 +27,7 @@ const Statistics = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-orange-50">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
@@ -53,13 +53,13 @@ const Statistics = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-purple-100 to-orange-100 border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <Card className="bg-gradient-to-br from-purple-100 to-rose-100 border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium text-gray-700">Engagement Rate</CardTitle>
               <Heart className="h-4 w-4 text-purple-600" />
             </CardHeader>
             <CardContent>
-              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">8.2%</div>
+              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent">8.2%</div>
               <p className="text-xs text-purple-600 flex items-center mt-1">
                 <TrendingUp className="h-3 w-3 mr-1" />
                 +12% from last month
@@ -67,14 +67,14 @@ const Statistics = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-orange-100 to-pink-100 border-orange-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <Card className="bg-gradient-to-br from-rose-100 to-pink-100 border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium text-gray-700">Monthly Reach</CardTitle>
-              <TrendingUp className="h-4 w-4 text-orange-600" />
+              <TrendingUp className="h-4 w-4 text-rose-600" />
             </CardHeader>
             <CardContent>
-              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent">1.8M</div>
-              <p className="text-xs text-orange-600 flex items-center mt-1">
+              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">1.8M</div>
+              <p className="text-xs text-rose-600 flex items-center mt-1">
                 <TrendingUp className="h-3 w-3 mr-1" />
                 +23% from last month
               </p>
@@ -159,7 +159,7 @@ const Statistics = () => {
                       <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0.7}/>
                     </linearGradient>
                     <linearGradient id="barGradient2" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#f97316" stopOpacity={0.9}/>
+                      <stop offset="5%" stopColor="#f43f5e" stopOpacity={0.9}/>
                       <stop offset="95%" stopColor="#ec4899" stopOpacity={0.7}/>
                     </linearGradient>
                   </defs>
@@ -169,7 +169,7 @@ const Statistics = () => {
           </Card>
         </div>
 
-        <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-orange-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
           <CardHeader className="px-0 pt-0">
             <CardTitle className="text-lg sm:text-xl text-gray-800 text-center">Platform Engagement Rates</CardTitle>
           </CardHeader>
@@ -185,7 +185,6 @@ const Statistics = () => {
                       outerRadius={60}
                       dataKey="value"
                       label={({ platform, value }) => `${platform}: ${value}%`}
-                      className="text-xs sm:text-sm"
                     >
                       {engagementData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={entry.color} />

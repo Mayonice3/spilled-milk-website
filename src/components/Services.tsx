@@ -18,16 +18,16 @@ const Services = () => {
       title: "Twitter Marketing",
       description: "Build your Twitter presence with targeted campaigns and community engagement.",
       features: ["Tweet Scheduling", "Thread Strategy", "Community Building", "Trend Analysis"],
-      gradient: "from-purple-100 to-orange-100",
+      gradient: "from-purple-100 to-rose-100",
       border: "border-purple-200"
     },
     {
-      icon: <Camera className="h-8 w-8 text-orange-500" />,
+      icon: <Camera className="h-8 w-8 text-rose-500" />,
       title: "Content Creation",
       description: "Professional content that resonates with your audience and drives engagement.",
       features: ["Visual Design", "Copywriting", "Video Content", "Brand Consistency"],
-      gradient: "from-orange-100 to-pink-100",
-      border: "border-orange-200"
+      gradient: "from-rose-100 to-pink-100",
+      border: "border-rose-200"
     },
     {
       icon: <BarChart3 className="h-8 w-8 text-pink-600" />,
@@ -42,16 +42,16 @@ const Services = () => {
       title: "Community Management",
       description: "Build and nurture an engaged community around your brand.",
       features: ["Daily Engagement", "Comment Management", "DM Responses", "Community Events"],
-      gradient: "from-purple-100 to-orange-100",
+      gradient: "from-purple-100 to-rose-100",
       border: "border-purple-200"
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-orange-600" />,
+      icon: <TrendingUp className="h-8 w-8 text-rose-600" />,
       title: "Growth Strategy",
       description: "Comprehensive growth strategies tailored to your business goals.",
       features: ["Market Analysis", "Competitor Study", "Growth Planning", "ROI Optimization"],
-      gradient: "from-orange-100 to-pink-100",
-      border: "border-orange-200"
+      gradient: "from-rose-100 to-pink-100",
+      border: "border-rose-200"
     }
   ];
 
@@ -99,7 +99,7 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-8 sm:mt-12">
-          <Button size="lg" className="bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500 hover:from-pink-600 hover:via-purple-700 hover:to-orange-600 text-white px-8 sm:px-12 py-4 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300">
+          <Button size="lg" className="bg-gradient-to-r from-pink-500 via-purple-600 to-rose-500 hover:from-pink-600 hover:via-purple-700 hover:to-rose-600 text-white px-8 sm:px-12 py-4 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300">
             Get Custom Quote
           </Button>
         </div>

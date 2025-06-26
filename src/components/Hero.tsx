@@ -4,7 +4,7 @@ import { ArrowRight, Instagram, Twitter, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-orange-50 flex items-center">
+    <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50 flex items-center">
       <div 
         className="absolute inset-0 opacity-20" 
         style={{
@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="animate-fade-in text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 leading-tight">
               Grow Your Social Media
-              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 bg-clip-text text-transparent"> Presence</span>
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 bg-clip-text text-transparent"> Presence</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Transform your social media strategy with our proven methods. 
@@ -43,7 +43,7 @@ const Hero = () => {
                 <span>Twitter Marketing</span>
               </div>
               <div className="flex items-center gap-2">
-                <TrendingUp className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500" />
+                <TrendingUp className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />
                 <span>Analytics</span>
               </div>
             </div>
@@ -56,12 +56,12 @@ const Hero = () => {
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-1 sm:mb-2">500K+</div>
                   <div className="text-xs sm:text-sm text-gray-600">Followers Gained</div>
                 </div>
-                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-purple-50 to-orange-50 rounded-xl border border-purple-100">
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-purple-500 to-orange-500 bg-clip-text text-transparent mb-1 sm:mb-2">98%</div>
+                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-purple-50 to-rose-50 rounded-xl border border-purple-100">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-purple-500 to-rose-500 bg-clip-text text-transparent mb-1 sm:mb-2">98%</div>
                   <div className="text-xs sm:text-sm text-gray-600">Client Satisfaction</div>
                 </div>
-                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-orange-50 to-pink-50 rounded-xl border border-orange-100">
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent mb-1 sm:mb-2">150+</div>
+                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl border border-rose-100">
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-1 sm:mb-2">150+</div>
                   <div className="text-xs sm:text-sm text-gray-600">Happy Clients</div>
                 </div>
                 <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border border-pink-100">

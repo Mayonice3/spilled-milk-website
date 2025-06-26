@@ -75,7 +75,7 @@ const Testimonials = () => {
                 
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-orange-400 text-orange-400" />
+                    <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-rose-400 text-rose-400" />
                   ))}
                 </div>
 
@@ -101,7 +101,7 @@ const Testimonials = () => {
         </div>
 
         <div className="text-center mt-8 sm:mt-12">
-          <div className="bg-gradient-to-br from-pink-100 via-purple-100 to-orange-100 rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto border-2 border-pink-200 shadow-lg">
+          <div className="bg-gradient-to-br from-pink-100 via-purple-100 to-rose-100 rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto border-2 border-pink-200 shadow-lg">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
               Ready to Join Our Success Stories?
             </h3>

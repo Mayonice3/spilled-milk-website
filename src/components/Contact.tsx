@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-100 via-purple-100 to-orange-100">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-100 via-purple-100 to-rose-100">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
@@ -33,7 +32,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-center gap-4 p-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-purple-200">
-                <div className="bg-gradient-to-r from-purple-500 to-orange-600 p-3 rounded-full">
+                <div className="bg-gradient-to-r from-purple-500 to-rose-600 p-3 rounded-full">
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </div>
                 <div>
@@ -42,8 +41,8 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-4 p-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-orange-200">
-                <div className="bg-gradient-to-r from-orange-500 to-pink-600 p-3 rounded-full">
+              <div className="flex items-center gap-4 p-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-rose-200">
+                <div className="bg-gradient-to-r from-rose-500 to-pink-600 p-3 rounded-full">
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </div>
                 <div>
@@ -71,11 +70,11 @@ const Contact = () => {
                   Free 30-minute consultation call
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-orange-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-rose-600 rounded-full"></div>
                   Custom growth strategy proposal
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-gradient-to-r from-orange-500 to-pink-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full"></div>
                   Detailed timeline and pricing
                 </li>
                 <li className="flex items-center gap-2">
@@ -159,7 +158,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <Button className="w-full bg-gradient-to-r from-pink-500 via-purple-600 to-orange-500 hover:from-pink-600 hover:via-purple-700 hover:to-orange-600 text-white py-4 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300">
+                <Button className="w-full bg-gradient-to-r from-pink-500 via-purple-600 to-rose-500 hover:from-pink-600 hover:via-purple-700 hover:to-rose-600 text-white py-4 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300">
                   Get My Free Consultation
                 </Button>
 
