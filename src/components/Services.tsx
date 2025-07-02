@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Instagram, Twitter, TrendingUp, Users, Camera, BarChart3 } from "lucide-react";
+import { Instagram, TrendingUp, Users, Camera, BarChart3 } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -12,14 +12,6 @@ const Services = () => {
       features: ["Hashtag Strategy", "Content Planning", "Story Optimization", "Reels Creation"],
       gradient: "from-pink-100 to-purple-100",
       border: "border-pink-200"
-    },
-    {
-      icon: <Twitter className="h-8 w-8 text-purple-500" />,
-      title: "Twitter Marketing",
-      description: "Build your Twitter presence with targeted campaigns and community engagement.",
-      features: ["Tweet Scheduling", "Thread Strategy", "Community Building", "Trend Analysis"],
-      gradient: "from-purple-100 to-rose-100",
-      border: "border-purple-200"
     },
     {
       icon: <Camera className="h-8 w-8 text-rose-500" />,

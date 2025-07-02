@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Instagram, Twitter, TrendingUp } from "lucide-react";
+import { ArrowRight, Instagram, TrendingUp, Eye } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 opacity-20" 
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e91e63' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e1306c' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}
       ></div>
       
@@ -39,8 +39,8 @@ const Hero = () => {
                 <span>Instagram Growth</span>
               </div>
               <div className="flex items-center gap-2">
-                <Twitter className="h-4 w-4 sm:h-5 sm:w-5 text-purple-500" />
-                <span>Twitter Marketing</span>
+                <Eye className="h-4 w-4 sm:h-5 sm:w-5 text-purple-500" />
+                <span>Profile Views</span>
               </div>
               <div className="flex items-center gap-2">
                 <TrendingUp className="h-4 w-4 sm:h-5 sm:w-5 text-rose-500" />
@@ -53,15 +53,15 @@ const Hero = () => {
             <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-pink-200">
               <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
                 <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border border-pink-100">
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-1 sm:mb-2">500K+</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Followers Gained</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-1 sm:mb-2">100K+</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Profile Views/Month</div>
                 </div>
                 <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-purple-50 to-rose-50 rounded-xl border border-purple-100">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-purple-500 to-rose-500 bg-clip-text text-transparent mb-1 sm:mb-2">98%</div>
                   <div className="text-xs sm:text-sm text-gray-600">Client Satisfaction</div>
                 </div>
                 <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl border border-rose-100">
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-1 sm:mb-2">150+</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-1 sm:mb-2">15+</div>
                   <div className="text-xs sm:text-sm text-gray-600">Happy Clients</div>
                 </div>
                 <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border border-pink-100">
