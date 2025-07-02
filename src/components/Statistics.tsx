@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { TrendingUp, Heart, MessageCircle, Eye } from "lucide-react";
 
 const Statistics = () => {
@@ -13,17 +14,35 @@ const Statistics = () => {
     { month: 'Jun', views: 105000, engagement: 5.5 },
   ];
 
-  const engagementData = [
-    { platform: 'Instagram', value: 85, color: '#E1306C' },
-    { platform: 'LinkedIn', value: 68, color: '#8B5CF6' },
-    { platform: 'YouTube', value: 72, color: '#F43F5E' },
-  ];
-
   const contentPerformance = [
     { type: 'Posts', reach: 45000, engagement: 3200 },
     { type: 'Stories', reach: 28000, engagement: 2100 },
     { type: 'Reels', reach: 75000, engagement: 5800 },
     { type: 'IGTV', reach: 15000, engagement: 1200 },
+  ];
+
+  // Placeholder images - user will upload their own screenshots
+  const performanceImages = [
+    { 
+      src: "/placeholder.svg", 
+      alt: "Instagram analytics showing profile views growth",
+      title: "Profile Views Analytics"
+    },
+    { 
+      src: "/placeholder.svg", 
+      alt: "Instagram engagement metrics and likes performance",
+      title: "Engagement Metrics"
+    },
+    { 
+      src: "/placeholder.svg", 
+      alt: "Instagram reach and impressions data",
+      title: "Reach & Impressions"
+    },
+    { 
+      src: "/placeholder.svg", 
+      alt: "Instagram stories performance analytics",
+      title: "Stories Performance"
+    }
   ];
 
   return (
@@ -202,46 +221,37 @@ const Statistics = () => {
           </Card>
         </div>
 
+        {/* Performance Screenshots Carousel */}
         <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
           <CardHeader className="px-0 pt-0">
-            <CardTitle className="text-lg sm:text-xl text-gray-800 text-center">Platform Engagement Rates</CardTitle>
+            <CardTitle className="text-lg sm:text-xl text-gray-800 text-center">Real Platform Performance Screenshots</CardTitle>
+            <p className="text-sm text-gray-600 text-center mt-2">Direct screenshots from Instagram analytics showing actual results</p>
           </CardHeader>
           <CardContent className="px-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
-              <div className="order-2 md:order-1">
-                <ResponsiveContainer width="100%" height={200} className="sm:h-[250px]">
-                  <PieChart>
-                    <Pie
-                      data={engagementData}
-                      cx="50%"
-                      cy="50%"
-                      outerRadius={60}
-                      dataKey="value"
-                      label={({ platform, value }) => `${platform}: ${value}%`}
-                    >
-                      {engagementData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={entry.color} />
-                      ))}
-                    </Pie>
-                    <Tooltip />
-                  </PieChart>
-                </ResponsiveContainer>
-              </div>
-              <div className="space-y-3 sm:space-y-4 order-1 md:order-2">
-                {engagementData.map((item, index) => (
-                  <div key={index} className="flex items-center justify-between p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl border border-pink-100">
-                    <div className="flex items-center gap-3">
-                      <div 
-                        className="w-3 h-3 sm:w-4 sm:h-4 rounded-full shadow-lg" 
-                        style={{ backgroundColor: item.color }}
-                      ></div>
-                      <span className="font-semibold text-gray-800 text-sm sm:text-base">{item.platform}</span>
+            <Carousel className="w-full max-w-4xl mx-auto">
+              <CarouselContent>
+                {performanceImages.map((image, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-2">
+                      <Card className="border-pink-200 hover:shadow-lg transition-all duration-300">
+                        <CardContent className="p-4">
+                          <div className="aspect-square rounded-lg bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center mb-3">
+                            <img 
+                              src={image.src} 
+                              alt={image.alt}
+                              className="w-full h-full object-cover rounded-lg"
+                            />
+                          </div>
+                          <h4 className="text-sm font-semibold text-gray-800 text-center">{image.title}</h4>
+                        </CardContent>
+                      </Card>
                     </div>
-                    <span className="text-gray-700 font-bold text-sm sm:text-base">{item.value}%</span>
-                  </div>
+                  </CarouselItem>
                 ))}
-              </div>
-            </div>
+              </CarouselContent>
+              <CarouselPrevious className="bg-white/80 border-pink-200 hover:bg-pink-50" />
+              <CarouselNext className="bg-white/80 border-pink-200 hover:bg-pink-50" />
+            </Carousel>
           </CardContent>
         </Card>
       </div>
