@@ -1,13 +1,12 @@
 
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Instagram, TrendingUp, Eye } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center">
+    <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50 flex items-center">
       <div 
-        className="absolute inset-0 opacity-10" 
+        className="absolute inset-0 opacity-20" 
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e1306c' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}
@@ -16,11 +15,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="animate-fade-in text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 leading-tight">
               Grow Your Social Media
               <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 bg-clip-text text-transparent"> Presence</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Transform your social media strategy with our proven methods. 
               We help businesses and creators achieve authentic growth, 
               engagement, and meaningful connections with their audience.
@@ -30,11 +29,11 @@ const Hero = () => {
                 Get Started Today
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-purple-500 text-purple-400 hover:bg-purple-900/50 px-6 sm:px-8 py-3 text-base sm:text-lg">
+              <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-6 sm:px-8 py-3 text-base sm:text-lg">
                 View Our Work
               </Button>
             </div>
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-gray-400 text-sm sm:text-base justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-gray-600 text-sm sm:text-base justify-center lg:justify-start">
               <div className="flex items-center gap-2">
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-pink-500" />
                 <span>Instagram Growth</span>
@@ -51,23 +50,23 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-scale-in mt-8 lg:mt-0">
-            <div className="bg-gray-800/90 backdrop-blur-sm p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-pink-500/30">
+            <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-pink-200">
               <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
-                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-gray-700 to-gray-600 rounded-xl border border-pink-500/20">
+                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border border-pink-100">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-1 sm:mb-2">100K+</div>
-                  <div className="text-xs sm:text-sm text-gray-300">Profile Views/Month</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Profile Views/Month</div>
                 </div>
-                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-gray-700 to-gray-600 rounded-xl border border-purple-500/20">
+                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-purple-50 to-rose-50 rounded-xl border border-purple-100">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-purple-500 to-rose-500 bg-clip-text text-transparent mb-1 sm:mb-2">98%</div>
-                  <div className="text-xs sm:text-sm text-gray-300">Client Satisfaction</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Client Satisfaction</div>
                 </div>
-                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-gray-700 to-gray-600 rounded-xl border border-rose-500/20">
+                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl border border-rose-100">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-1 sm:mb-2">15+</div>
-                  <div className="text-xs sm:text-sm text-gray-300">Happy Clients</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Happy Clients</div>
                 </div>
-                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-gray-700 to-gray-600 rounded-xl border border-pink-500/20">
+                <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border border-pink-100">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-1 sm:mb-2">300%</div>
-                  <div className="text-xs sm:text-sm text-gray-300">Avg. Growth</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Avg. Growth</div>
                 </div>
               </div>
             </div>
@@ -79,4 +78,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
