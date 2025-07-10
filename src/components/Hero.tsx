@@ -4,7 +4,8 @@ import { ArrowRight, Instagram, TrendingUp, Eye } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50 flex items-center">
+    <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50 flex items-center" data-aos="fade-up"
+     data-aos-duration="2000">
       <div 
         className="absolute inset-0 opacity-20" 
         style={{
@@ -26,11 +27,11 @@ const Hero = () => {
               engagement, and meaningful connections with their audience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg border-0">
+              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg border-0" data-aos="fade-up">
                 Get Started Today
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-6 sm:px-8 py-3 text-base sm:text-lg">
+              <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-6 sm:px-8 py-3 text-base sm:text-lg" data-aos="fade-up">
                 View Our Work
               </Button>
             </div>

@@ -49,16 +49,18 @@ const Statistics = () => {
     <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up"
+            data-aos-duration="1500">
             Real Results, Real Growth
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4"data-aos="fade-up"
+            data-aos-duration="1500">
             Our data-driven approach delivers measurable results. Here's how we've helped our clients grow their social media presence.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
-          <Card className="bg-gradient-to-br from-pink-100 to-purple-100 border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <Card className="bg-gradient-to-br from-pink-100 to-purple-100 border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-right">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium text-gray-700">Engagement Rate</CardTitle>
               <Heart className="h-4 w-4 text-pink-600" />
@@ -72,7 +74,7 @@ const Statistics = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-purple-100 to-rose-100 border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <Card className="bg-gradient-to-br from-purple-100 to-rose-100 border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-right" data-aos-delay="300">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium text-gray-700">Monthly Reach</CardTitle>
               <Eye className="h-4 w-4 text-purple-600" />
@@ -86,7 +88,7 @@ const Statistics = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-rose-100 to-pink-100 border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <Card className="bg-gradient-to-br from-rose-100 to-pink-100 border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-right" data-aos-delay="600">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium text-gray-700">Comments</CardTitle>
               <MessageCircle className="h-4 w-4 text-rose-600" />
@@ -103,11 +105,11 @@ const Statistics = () => {
 
         {/* Social Media Examples Section */}
         <div className="mb-8 sm:mb-12">
-          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-6">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-6" data-aod="fade-left">
             Examples of Engagement Growth
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-white/80 backdrop-blur-sm border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="bg-white/80 backdrop-blur-sm border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-left">
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-4 mb-4">
                   <Eye className="h-8 w-8 text-pink-500 mx-auto mb-2" />
@@ -120,7 +122,7 @@ const Statistics = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/80 backdrop-blur-sm border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="bg-white/80 backdrop-blur-sm border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-left" data-aos-delay="300">
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-purple-50 to-rose-50 rounded-lg p-4 mb-4">
                   <Heart className="h-8 w-8 text-purple-500 mx-auto mb-2" />
@@ -133,7 +135,7 @@ const Statistics = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/80 backdrop-blur-sm border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="bg-white/80 backdrop-blur-sm border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-left" data-aos-delay="600">
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-lg p-4 mb-4">
                   <MessageCircle className="h-8 w-8 text-rose-500 mx-auto mb-2" />
@@ -148,8 +150,10 @@ const Statistics = () => {
           </div>
         </div>
 
+        {/* Visual Graphs showing growth under here*/}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
-          <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up">
             <CardHeader className="px-0 pt-0">
               <CardTitle className="text-lg sm:text-xl text-gray-800">Profile Views Growth Over Time</CardTitle>
             </CardHeader>
@@ -185,7 +189,7 @@ const Statistics = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-purple-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
             <CardHeader className="px-0 pt-0">
               <CardTitle className="text-lg sm:text-xl text-gray-800">Content Performance</CardTitle>
             </CardHeader>
@@ -222,9 +226,9 @@ const Statistics = () => {
         </div>
 
         {/* Performance Screenshots Carousel */}
-        <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-rose-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-duration="500">
           <CardHeader className="px-0 pt-0">
-            <CardTitle className="text-lg sm:text-xl text-gray-800 text-center">Real Platform Performance Screenshots</CardTitle>
+            <CardTitle className="text-lg sm:text-xl text-gray-800 text-center">Instagram Performance Screenshots</CardTitle>
             <p className="text-sm text-gray-600 text-center mt-2">Direct screenshots from Instagram analytics showing actual results</p>
           </CardHeader>
           <CardContent className="px-0">
