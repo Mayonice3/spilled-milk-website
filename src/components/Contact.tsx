@@ -15,7 +15,7 @@ const Contact = () => {
   });
 }, []);
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-100 via-purple-100 to-rose-100 relative z-10">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-pink-100 via-purple-100 to-rose-100 relative z-10">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">

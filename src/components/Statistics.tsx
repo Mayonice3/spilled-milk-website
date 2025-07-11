@@ -152,7 +152,7 @@ const Statistics = () => {
 
         {/* Visual Graphs showing growth under here*/}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+        <div id="ig_screenshots" className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up">
             <CardHeader className="px-0 pt-0">
               <CardTitle className="text-lg sm:text-xl text-gray-800">Profile Views Growth Over Time</CardTitle>

@@ -4,16 +4,33 @@ import { ArrowRight, Instagram, TrendingUp, Eye } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50 flex items-center" data-aos="fade-up"
-     data-aos-duration="2000">
-      <div 
-        className="absolute inset-0 opacity-20" 
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e1306c' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}
-      ></div>
+    <section className="relative min-h-screen flex items-center overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
+      <div className="absolute inset-0 z-0">
+              <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
+          <source src="/your-video.mp4" type="video/mp4" />
+          <source src="/your-video.webm" type="video/webm" />
+        </video>
+        
+        {/* OR for GIF (use one or the other) */}
+        {/* <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src="/your-animation.gif"
+          alt="Background animation"
+          loading="eager"
+        /> */}
+        
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
       
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="animate-fade-in text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 leading-tight">
@@ -27,11 +44,13 @@ const Hero = () => {
               engagement, and meaningful connections with their audience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg border-0" data-aos="fade-up">
+              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg border-0" data-aos="fade-up"
+              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
                 Get Started Today
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-6 sm:px-8 py-3 text-base sm:text-lg" data-aos="fade-up">
+              <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-6 sm:px-8 py-3 text-base sm:text-lg" data-aos="fade-up"
+              onClick={() => document.getElementById('ig_screenshots').scrollIntoView({ behavior: 'smooth' })}>
                 View Our Work
               </Button>
             </div>
