@@ -12,19 +12,19 @@ const Hero = () => {
           loop
           muted
           playsInline
-          preload="auto"
-        >
+          preload="auto">
+          
           <source src="/your-video.mp4" type="video/mp4" />
           <source src="/your-video.webm" type="video/webm" />
         </video>
         
         {/* OR for GIF (use one or the other) */}
         {/* <img
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/your-animation.gif"
-          alt="Background animation"
-          loading="eager"
-        /> */}
+                                                                                                                    className="absolute top-0 left-0 w-full h-full object-cover"
+                                                                                                                    src="/your-animation.gif"
+                                                                                                                    alt="Background animation"
+                                                                                                                    loading="eager"
+                                                                                                                   /> */}
         
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/30"></div>
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-scale-in mt-8 lg:mt-0">
-            <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-pink-200">
+            <div className="backdrop-blur-sm p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-solid border-destructive bg-[#1d4be2]">
               <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
                 <div className="text-center p-3 sm:p-4 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border border-pink-100">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-1 sm:mb-2">100K+</div>
@@ -94,8 +94,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
