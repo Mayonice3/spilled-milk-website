@@ -33,7 +33,7 @@ const Hero = () => {
                 Get Started Today
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-6 sm:px-8 py-3 text-base sm:text-lg" data-aos="fade-up"
+              <Button variant="outline" size="lg" className="border-2 border-white/30 text-white hover:bg-white/10 px-6 sm:px-8 py-3 text-base sm:text-lg" data-aos="fade-up"
               onClick={() => document.getElementById('ig_screenshots').scrollIntoView({ behavior: 'smooth' })}>
                 View Our Work
               </Button>
