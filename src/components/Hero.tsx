@@ -22,7 +22,7 @@ const Hero = () => {
               <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 bg-clip-text text-transparent"> Social Media </span>
                Presence
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg sm:text-xl text-white/70 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Transform your social media strategy with our proven methods. 
               We help businesses and creators achieve authentic growth, 
               engagement, and meaningful connections with their audience.
