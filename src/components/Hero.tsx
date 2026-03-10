@@ -4,31 +4,15 @@ import { ArrowRight, Instagram, TrendingUp, Eye } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden" data-aos="fade-up" data-aos-duration="2000">
-      <div className="absolute inset-0 z-0">
-              <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto">
-          
-          <source src="/your-video.mp4" type="video/mp4" />
-          <source src="/your-video.webm" type="video/webm" />
-        </video>
-        
-        {/* OR for GIF (use one or the other) */}
-        {/* <img
-                                                                                                                    className="absolute top-0 left-0 w-full h-full object-cover"
-                                                                                                                    src="/your-animation.gif"
-                                                                                                                    alt="Background animation"
-                                                                                                                    loading="eager"
-                                                                                                                   /> */}
-        
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
-      </div>
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#1a3a8f]" data-aos="fade-up" data-aos-duration="2000">
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 z-0" style={{
+        backgroundImage: `
+          linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)
+        `,
+        backgroundSize: '60px 60px'
+      }}></div>
       
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
