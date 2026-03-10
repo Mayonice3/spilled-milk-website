@@ -5,13 +5,17 @@ import { ArrowRight, Instagram, TrendingUp, Eye } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#1a3a8f]" data-aos="fade-up" data-aos-duration="2000">
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 z-0" style={{
+      {/* Animated grid pattern overlay */}
+      <div className="absolute inset-0 z-0 animate-grid-scroll" style={{
         backgroundImage: `
           linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
           linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)
         `,
-        backgroundSize: '60px 60px'
+        backgroundSize: '60px 60px',
+        width: '200%',
+        height: '200%',
+        top: '-50%',
+        left: '-50%'
       }}></div>
       
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
