@@ -54,32 +54,32 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#1a3a8f]">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto px-4">
             Don't just take our word for it. Here's what our satisfied clients have to say about their growth journey with us.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-gradient-to-br from-pink-50 to-purple-50 border-2 border-pink-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <Card key={index} className="bg-white border-2 border-white/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-4 sm:p-6">
                 <div className="flex items-center mb-4">
-                  <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-pink-500 opacity-60" />
+                  <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-[#1a3a8f] opacity-60" />
                 </div>
                 
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-rose-400 text-rose-400" />
+                    <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-[#1a3a8f] text-[#1a3a8f]" />
                   ))}
                 </div>
 
-                <p className="text-gray-700 mb-6 leading-relaxed italic text-sm sm:text-base font-medium">
+                <p className="text-black/80 mb-6 leading-relaxed italic text-sm sm:text-base font-medium">
                   "{testimonial.content}"
                 </p>
 
@@ -87,12 +87,12 @@ const Testimonials = () => {
                   <img 
                     src={testimonial.image} 
                     alt={testimonial.name}
-                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4 object-cover border-2 border-pink-200"
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4 object-cover border-2 border-[#1a3a8f]/30"
                   />
                   <div>
-                    <div className="font-bold text-gray-800 text-sm sm:text-base">{testimonial.name}</div>
-                    <div className="text-xs sm:text-sm text-gray-600 font-medium">{testimonial.role}</div>
-                    <div className="text-xs sm:text-sm text-purple-600 font-semibold">{testimonial.company}</div>
+                    <div className="font-bold text-black text-sm sm:text-base">{testimonial.name}</div>
+                    <div className="text-xs sm:text-sm text-black/70 font-medium">{testimonial.role}</div>
+                    <div className="text-xs sm:text-sm text-[#1a3a8f] font-semibold">{testimonial.company}</div>
                   </div>
                 </div>
               </CardContent>
@@ -101,18 +101,18 @@ const Testimonials = () => {
         </div>
 
         <div className="text-center mt-8 sm:mt-12">
-          <div className="bg-gradient-to-br from-pink-100 via-purple-100 to-rose-100 rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto border-2 border-pink-200 shadow-lg">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto border-2 border-white/20 shadow-lg">
+            <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
               Ready to Join Our Success Stories?
             </h3>
-            <p className="text-gray-600 mb-6 text-sm sm:text-base px-4">
+            <p className="text-black/70 mb-6 text-sm sm:text-base px-4">
               Let us help you achieve the same remarkable results. Start your growth journey today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 rounded-xl font-bold transition-all duration-300 text-sm sm:text-base shadow-lg hover:shadow-xl">
+              <button className="bg-[#1a3a8f] hover:bg-[#1a3a8f]/90 text-white px-6 sm:px-8 py-3 rounded-xl font-bold transition-all duration-300 text-sm sm:text-base shadow-lg hover:shadow-xl">
                 Get Started Now
               </button>
-              <button className="border-2 border-purple-300 text-purple-700 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white hover:border-transparent px-6 sm:px-8 py-3 rounded-xl font-bold transition-all duration-300 text-sm sm:text-base">
+              <button className="border-2 border-[#1a3a8f] text-[#1a3a8f] hover:bg-[#1a3a8f] hover:text-white px-6 sm:px-8 py-3 rounded-xl font-bold transition-all duration-300 text-sm sm:text-base">
                 Schedule Consultation
               </button>
             </div>
