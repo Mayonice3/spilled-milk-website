@@ -38,7 +38,7 @@ const Hero = () => {
                 View Our Work
               </Button>
             </div>
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-gray-600 text-sm sm:text-base justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-white/70 text-sm sm:text-base justify-center lg:justify-start">
               <div className="flex items-center gap-2">
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-pink-500" />
                 <span>Instagram Growth</span>
