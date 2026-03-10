@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#1a3a8f]" data-aos="fade-up" data-aos-duration="2000">
       {/* Animated grid pattern overlay */}
-      <div className="absolute inset-0 z-0 animate-[grid-scroll_20s_linear_infinite]" style={{
+      <div className="absolute inset-0 z-0 animate-grid-scroll" style={{
         backgroundImage: `
           linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
           linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)
