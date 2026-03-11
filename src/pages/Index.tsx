@@ -1,32 +1,41 @@
-
+import React from "react";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Statistics from "@/components/Statistics";
 import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
+import WorkCarousel from "@/components/WorkCarousel";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
-      <Hero />
-      <Statistics />
-      <Services />
-      <Testimonials />
-      <Contact />
-      
-      {/* Address Section */}
-      <section className="py-8 bg-[#1a3a8f] border-t border-white/20">
-        <div className="container mx-auto px-4 sm:px-6 text-center">
-          <div className="flex items-center justify-center gap-2 text-white">
-            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm sm:text-base font-medium">
-              Based in Bengaluru, Karnataka
-            </span>
-          </div>
+      <Navbar />
+      <div className="relative bg-[#1a3a8f] overflow-hidden">
+        {/* Continuous Animated grid pattern overlay */}
+        <div className="absolute inset-0 pointer-events-none z-0">
+          <div
+            className="absolute inset-0 animate-grid-scroll"
+            style={{
+              backgroundImage: `
+                linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)
+              `,
+              backgroundSize: "60px 60px",
+              width: "200%",
+              height: "200%",
+              top: "-50%",
+              left: "-50%",
+            }}
+          ></div>
         </div>
-      </section>
+        <Hero />
+        <Statistics />
+      </div>
+      <Services />
+      <WorkCarousel />
+      <Contact />
+      <Footer />
     </div>
   );
 };

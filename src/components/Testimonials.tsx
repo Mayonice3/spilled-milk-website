@@ -9,7 +9,7 @@ const Testimonials = () => {
       company: "@sarahstyles",
       content: "Working with this team transformed my Instagram presence completely. I went from 5K to 150K followers in just 6 months, and my engagement rates are through the roof!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face"
+      image: "https://ui-avatars.com/api/?name=Sarah+Johnson&background=1a3a8f&color=fff"
     },
     {
       name: "Marcus Chen",
@@ -17,7 +17,7 @@ const Testimonials = () => {
       company: "TechFlow Solutions",
       content: "The analytics and insights provided helped us understand our audience better than ever. Our conversion rate from social media increased by 300% in just 4 months.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face"
+      image: "https://ui-avatars.com/api/?name=Marcus+Chen&background=1a3a8f&color=fff"
     },
     {
       name: "Emily Rodriguez",
@@ -25,7 +25,7 @@ const Testimonials = () => {
       company: "Bella's Bistro",
       content: "Our restaurant's social media was practically non-existent before. Now we have a thriving community of food lovers and our bookings have doubled!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face"
+      image: "https://ui-avatars.com/api/?name=Emily+Rodriguez&background=1a3a8f&color=fff"
     },
     {
       name: "David Kim",
@@ -33,7 +33,7 @@ const Testimonials = () => {
       company: "@fitwithdavid",
       content: "The content strategy they developed for me was phenomenal. My workout videos now regularly get 50K+ views, and I've built an amazing fitness community.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face"
+      image: "https://ui-avatars.com/api/?name=David+Kim&background=1a3a8f&color=fff"
     },
     {
       name: "Lisa Thompson",
@@ -41,7 +41,7 @@ const Testimonials = () => {
       company: "Glow Beauty Co.",
       content: "Not only did they grow our followers, but they helped us build genuine relationships with our customers. Our brand loyalty has never been stronger.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=64&h=64&fit=crop&crop=face"
+      image: "https://ui-avatars.com/api/?name=Lisa+Thompson&background=1a3a8f&color=fff"
     },
     {
       name: "Alex Parker",
@@ -49,7 +49,7 @@ const Testimonials = () => {
       company: "@wanderwithAlex",
       content: "The team's expertise in travel content is unmatched. They helped me secure brand partnerships worth over $50K in my first year working with them.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face"
+      image: "https://ui-avatars.com/api/?name=Alex+Parker&background=1a3a8f&color=fff"
     }
   ];
 
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 <div className="flex items-center mb-4">
                   <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-[#1a3a8f] opacity-60" />
                 </div>
-                
+
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-[#1a3a8f] text-[#1a3a8f]" />
@@ -84,8 +84,8 @@ const Testimonials = () => {
                 </p>
 
                 <div className="flex items-center">
-                  <img 
-                    src={testimonial.image} 
+                  <img
+                    src={testimonial.image}
                     alt={testimonial.name}
                     className="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4 object-cover border-2 border-[#1a3a8f]/30"
                   />
@@ -123,4 +123,5 @@ const Testimonials = () => {
   );
 };
 
+// Final component export
 export default Testimonials;

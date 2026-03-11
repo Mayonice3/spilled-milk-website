@@ -13,7 +13,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    AOS.init({ duration: 800, once: false });
+    AOS.init({ duration: 400, once: false });
   }, []);
 
   return (
