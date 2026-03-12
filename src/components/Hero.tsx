@@ -129,10 +129,11 @@ const Hero = () => {
                 ref={imageRef}
                 data-aos="fade-left"
                 data-aos-duration="400"
-                src="/Phone Mockup.png"
+                src="/phone-mockup.png"
                 alt="Social media growth on a smartphone"
                 loading="eager"
-                fetchPriority="high"
+                // @ts-ignore
+                fetchpriority="high"
                 className="w-full h-auto object-contain drop-shadow-2xl relative z-10"
               />
 

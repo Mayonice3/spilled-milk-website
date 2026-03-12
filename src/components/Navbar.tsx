@@ -58,7 +58,8 @@ const Navbar = () => {
               src="/spilled-milk-logo.png"
               alt="Spilled Milk Logo"
               loading="eager"
-              fetchPriority="high"
+              // @ts-ignore
+              fetchpriority="high"
               className="h-8 sm:h-10 w-auto"
             />
           </a>
