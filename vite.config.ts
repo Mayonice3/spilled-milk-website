@@ -15,4 +15,10 @@ export default defineConfig(({ mode }) => ({
         return null;
       }
     })(),
-  ]
+  ].filter(Boolean),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+}));
