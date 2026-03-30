@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-[1b1b1b]">
       <Navbar />
-      <div className="relative bg-[#a6a195] overflow-hidden">
+      <div className="relative bg-[#f0e8dd] overflow-hidden">
         {/* Continuous Animated grid pattern overlay */}
         <div className="absolute inset-0 pointer-events-none z-0">
           <div
