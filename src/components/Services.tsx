@@ -14,24 +14,24 @@ const Services = () => {
         "Performance-driven creative",
         "Proprietary growth frameworks"
       ],
-      bg: "bg-white",
-      text: "text-[#1a3a8f]"
+      bg: "bg-[#f0e8dd]",
+      text: "text-[#a6a195]"
     },
     {
       title: "The Viral Engine",
       subtitle: "Instagram Growth & Reels Strategy",
       description: "We don't just 'post'—we engineer attention. Our proprietary Reels framework is designed to trigger platform algorithms, turning cold viewers into loyal followers.",
       benefits: ["Algorithm-native content planning", "High-retention editing style", "Strategic hashtag & SEO clusters", "Daily engagement & community seeding"],
-      bg: "bg-[#1a3a8f]",
-      text: "text-white"
+      bg: "bg-[#1b1b1b]",
+      text: "text-[#f0e8dd]"
     },
     {
       title: "Content Alchemy",
       subtitle: "High-Performance Content Creation",
       description: "Visuals that demand a second look. We combine high-end production with data-backed creative direction to produce assets that convert.",
       benefits: ["Commercial-grade visual design", "Direct-response copywriting", "Short-form video mastery", "Brand identity scaling"],
-      bg: "bg-white",
-      text: "text-[#1a3a8f]"
+      bg: "bg-[#f0e8dd]",
+      text: "text-[#1b1b1b]"
     },
     {
       title: "Intel & Growth",
@@ -39,7 +39,7 @@ const Services = () => {
       description: "Stop guessing. We provide a transparent window into your growth using advanced attribution models and competitor intelligence.",
       benefits: ["Real-time performance dashboards", "Competitor vulnerability analysis", "Audience sentiment tracking", "Bi-weekly strategy pivots"],
       bg: "bg-black",
-      text: "text-white"
+      text: "text-[#f0e8dd]"
     }
   ];
 
