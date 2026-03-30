@@ -9,9 +9,9 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[1b1b1b]">
       <Navbar />
-      <div className="relative bg-[#1a3a8f] overflow-hidden">
+      <div className="relative bg-[#a6a195] overflow-hidden">
         {/* Continuous Animated grid pattern overlay */}
         <div className="absolute inset-0 pointer-events-none z-0">
           <div
