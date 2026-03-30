@@ -82,7 +82,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 justify-center lg:justify-start">
               <Button
                 size="lg"
-                className="bg-white text-[#1a3a8f] hover:bg-white/90 px-6 sm:px-8 py-3 text-base sm:text-lg border-0 font-bold"
+                className="bg-white text-[#1b1b1b] hover:bg-white/90 px-6 sm:px-8 py-3 text-base sm:text-lg border-0 font-bold"
                 data-aos="fade-up"
                 onClick={() =>
                   document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
@@ -94,7 +94,7 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-black hover:bg-white/10 px-6 sm:px-8 py-3 text-base sm:text-lg"
+                className="border-2 border-white text-black hover:bg-white/60 px-6 sm:px-8 py-3 text-base sm:text-lg"
                 data-aos="fade-up"
                 onClick={() =>
                   document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })
