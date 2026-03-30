@@ -15,7 +15,7 @@ const Services = () => {
         "Proprietary growth frameworks"
       ],
       bg: "bg-[#f0e8dd]",
-      text: "text-[#a6a195]"
+      text: "text-[#1b1b1b]"
     },
     {
       title: "The Viral Engine",
@@ -91,8 +91,8 @@ const Services = () => {
                       {service.description}
                     </p>
                     <button className={`py-2.5 sm:py-3 px-6 sm:px-8 rounded-full border-2 font-bold text-sm sm:text-lg transition-all duration-300 hover:scale-105 shadow-lg ${service.text === 'text-white'
-                      ? 'border-white text-white hover:bg-white hover:text-[#1a3a8f]'
-                      : 'border-[#1a3a8f] text-[#1a3a8f] hover:bg-[#1a3a8f] hover:text-white'
+                      ? 'border-white text-white hover:bg-white hover:text-[#a6a195]'
+                      : 'border-[#a6a195] text-[#a6a195] hover:bg-[#a6a195] hover:text-white'
                       }`}>
                       Discuss Project
                     </button>
