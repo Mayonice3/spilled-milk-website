@@ -14,17 +14,12 @@ const Index = () => {
         {/* Continuous Animated grid pattern overlay */}
         <div className="absolute inset-0 pointer-events-none z-0">
           <div
-            className="absolute inset-0 animate-grid-scroll"
+            className="absolute animate-grid-scroll w-[200%] h-[200%] -top-[50%] -left-[50%] bg-[size:30px_30px] md:bg-[size:60px_60px]"
             style={{
               backgroundImage: `
                 linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)
-              `,
-              backgroundSize: "60px 60px",
-              width: "200%",
-              height: "200%",
-              top: "-50%",
-              left: "-50%",
+              `
             }}
           ></div>
         </div>
