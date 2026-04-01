@@ -85,7 +85,7 @@ const Hero = () => {
                 className="bg-white text-[#1b1b1b] hover:bg-white/90 px-6 sm:px-8 py-3 text-base sm:text-lg border-0 font-bold"
                 data-aos="fade-up"
                 onClick={() =>
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                  document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" })
                 }
               >
                 Contact Us

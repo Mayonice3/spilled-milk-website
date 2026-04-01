@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import Statistics from "@/components/Statistics";
 import Services from "@/components/Services";
 import WorkCarousel from "@/components/WorkCarousel";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -34,7 +33,6 @@ const Index = () => {
       </div>
       <Services />
       <WorkCarousel />
-      <Contact />
       <Footer />
     </div>
   );
