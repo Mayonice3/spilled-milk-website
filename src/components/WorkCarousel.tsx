@@ -63,7 +63,7 @@ const WorkCarousel = () => {
           className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-6"
           data-aos="fade-up"
         >
-          Selected <span className="text-pink-500">Case Studies</span>
+          Selected <span className="text-[#f0e8dd]">Case Studies</span>
         </h2>
         <p
           className="subheading text-white/60 text-lg sm:text-xl max-w-2xl mx-auto"
